@@ -1,0 +1,7 @@
+- hosts: server2
+  tasks:
+    - name: 'installing'
+      yum: name= "vsftpd" state= present
+
+    - name: 'installing'
+      yum: name= "tree" state= present

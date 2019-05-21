@@ -1,0 +1,13 @@
+---
+- hosts: server2
+  tasks:
+    - name: install apacha
+      yum:
+        name: httpd
+        state: latest
+    - name: start and enable httpd
+      service:
+        name: httpd
+        state: started
+        enabled: yes
+

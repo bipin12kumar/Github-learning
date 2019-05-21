@@ -1,0 +1,8 @@
+
+- hosts: server2
+  tasks:
+    - name: installing
+      yum: name="{{item}]" state=present
+      with_item:
+        - vsftpd
+        - tree

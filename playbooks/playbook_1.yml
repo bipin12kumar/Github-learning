@@ -1,0 +1,7 @@
+-
+  name: this is our first play.
+  hosts: server2
+  tasks: 
+    -
+     name: "creat a dummy fime on server2"
+     command: touch /tmp/ansible_dummy.txt

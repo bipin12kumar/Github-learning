@@ -1,0 +1,7 @@
+
+- hosts: server2
+  tasks:
+    - name: Add epel-release repo
+      lineinfile:
+        path: /tmp/test.txt
+        line: 'Hello World this is my first lineinfile'

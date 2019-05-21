@@ -1,0 +1,8 @@
+-
+  name: this is our first play.
+  hosts: server2
+  tasks:
+    -
+     name: "creat a dummy file on server2"
+     copy: src=/root/bipin.txt dest=/tmp  owner=bipin  group=bipin  mode=0777
+

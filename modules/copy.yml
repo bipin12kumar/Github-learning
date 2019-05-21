@@ -1,0 +1,7 @@
+-
+  name: this is out first modules.
+  hosts: server2
+  tasks:
+    - 
+     name: "creat a dummy file on server"
+     copy: src=/root/bipin.txt dest=/tmp/
